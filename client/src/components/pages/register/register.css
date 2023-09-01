@@ -1,0 +1,55 @@
+.register{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:url("https://c8.alamy.com/comp/ER564D/3d-renderer-illustration-white-people-writing-registration-on-notebook-ER564D.jpg")}
+
+.registerTitle{
+    font-size: 30px;
+}
+
+.registerForm{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.registerForm label{
+    margin: 10px 0;
+}
+
+.registerInput{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow:5px;
+    border-radius: 5px;
+
+
+}
+
+.registerButton{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: teal;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.registerRegisterButton{
+    position: absolute;
+    top:  60px;
+    right: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(244, 45, 71);
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}

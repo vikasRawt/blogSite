@@ -1,0 +1,86 @@
+.settings{
+    display: flex;
+
+}
+
+.settingsWrapper{
+    flex: 9;
+    padding: 20px;
+}
+
+.settingsTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settingsUpdateTitle{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(17, 73, 54);
+}
+
+.settingsDeleteTitle{
+    color: yellowgreen;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.settingsForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.settingspic{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.settingImg{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.settingsPicIcon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(14, 46, 14);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.settingsForm label{
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(21, 67, 52);
+
+}
+
+.settingsForm input{
+    color: rgb(28, 27, 27);
+    margin: 10px 0;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+}
+
+.settingSubmit{
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(25, 80, 25);
+    cursor: pointer;
+    color: white;
+}
+

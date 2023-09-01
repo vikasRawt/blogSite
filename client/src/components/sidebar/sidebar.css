@@ -1,0 +1,60 @@
+.sidebar{
+    flex: 3;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.sidebar img{
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.sidebarItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebarTitle{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 80%;
+    padding: 5px;
+    margin: 10px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: 500;
+    color: brown;
+    line-height: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.sidebar p{
+    padding: 20px;
+}
+
+.sidebarListItem{
+    display: inline-block;
+    width: 50%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.sidebarSocial{
+    margin-top: 15px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.SidebarIcon{
+margin-left: 10px;
+font-size: 20px;
+}
