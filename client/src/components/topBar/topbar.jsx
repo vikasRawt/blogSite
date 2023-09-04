@@ -3,7 +3,7 @@ import "./topbar.css";
 import { Link } from "react-router-dom";
 
 function TopBar() {
-  const user = true;
+  const user = false;
   return (
     <>
       <div className="top-bar">
@@ -55,7 +55,7 @@ function TopBar() {
             </li>
           </ul>
           )}
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i className="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
     </>

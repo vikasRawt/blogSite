@@ -76,9 +76,10 @@ router.delete("/:id", async(req, res)=>{               //used user id to find th
 //GET A POST::--
  router.get("/:id",async(req, res)=>{
     try{
-    const user =await Post.findById(req.params.id);
+    const post =await Post.findById(req.params.id);
 
-    res.status(200).json(user);
+    res.status(200).json(post);
+    
     }catch(err){
         res.status(500).json(err);
     }
@@ -96,18 +97,18 @@ router.delete("/:id", async(req, res)=>{               //used user id to find th
          posts = await Post.find({username})   //here it is username:username means is it equal (1:1:22)
           }else if(catName){
       posts = await Post.find({categories:{           //here checking if categories equal(:) to 
-      $in:[catName]                                //here $in is method to check if there is some(category) inside that is inside equal to categories 
-      }})
+      $in:[catName],                                //here $in is method to check if there is some(category) inside that is inside equal to categories 
+      }});
           }
           else{
-            posts = awaitPost.find();
+            posts = await Post.find();
           }
 
 res.status(200).json( posts); 
 
 
     }catch(err){
-        res.status(500).json(err);
+        res.status(450).json(err);
     }
     })
 

@@ -1,5 +1,5 @@
 const express = require('express');
-
+const cors = require("cors")
 const app = express();
 const dotenv = require('dotenv');
 const authRoute =require('./routes/auth');
@@ -8,6 +8,7 @@ const postRoute =require('./routes/posts');
 const categoryRoute =require('./routes/categories');
 const multer = require('multer');
 
+app.use(cors())
 dotenv.config()
 app.use(express.json());  //so that the postman api can take json data or json data be expoted from here(26:17)
 const databaseConnect = require('./config/databaseConfig');
